@@ -131,3 +131,15 @@ console.log(add(2, 5));
 console.log(subtract(12, 2));
 console.log(multiply(7, 7));
 console.log(divide(10, 2));
+
+
+// Q9 返り値
+// 2 つの引数 x, y を受け取り、x を y で割った剰余を返り値とする関数 remainder を定義し、
+// 5 と 3 を引数に渡して実行した返り値を用いて文字列連結で以下のようにコンソールに出力してください。
+// 例：5 を 3 で割った余りは 2 です。
+
+remainder = function(x, y) {
+  return x + `を` + y + `で割った余りは` + x % y + `です。`;
+};
+
+console.log(remainder(5, 3)); 
