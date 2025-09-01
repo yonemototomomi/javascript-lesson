@@ -26,3 +26,27 @@ let user = {
 };
 
 console.log(user.age);
+
+// Q4 配列×オブジェクト
+// 下記の変数 playerList を使用し The Legend of Zelda をコンソールに出力してください。
+
+let playerList = [
+  {
+    name: 'John',
+    age: 26,
+    favorites: ['Card Game', 'Basket Ball', 'Programming'],
+  },
+  {
+    name: 'Bob',
+    age: 33,
+    favorites: ['Tinder', 'The Legend of Zelda'],
+  },
+  {
+    name: 'Michael',
+    age: 22,
+    favorites: ['Football', 'Smash Bros.'],
+  },
+];
+
+let favoriteGame = playerList[1].favorites[1];
+console.log(favoriteGame);
