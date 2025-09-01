@@ -10,3 +10,7 @@ console.log(me);
 // 変数 languages に JavaScript, PHP, Ruby, Python, Go の 5 つの値を持つ配列を代入し、
 // その中から JavaScript, Python を取得し、テンプレートリテラルを用いて以下のようにコンソールに出力してください。
 // 例：私の好きな言語はJavaScriptです。次はPythonを勉強してみたいです。
+let languages = ['JavaScript', 'PHP', 'Ruby', 'Python','Go'];
+let languagesText = `私の好きな言語は${languages[0]}です。
+次は${languages[3]}を勉強してみたいです。`;
+console.log(languagesText);
