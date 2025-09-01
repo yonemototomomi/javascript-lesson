@@ -14,3 +14,15 @@ let languages = ['JavaScript', 'PHP', 'Ruby', 'Python','Go'];
 let languagesText = `私の好きな言語は${languages[0]}です。
 次は${languages[3]}を勉強してみたいです。`;
 console.log(languagesText);
+
+// Q3 オブジェクト
+// 下記の変数 user を使用し 26 をコンソールに出力してください。
+
+let user = {
+  name: 'John',
+  age: 26,
+  bloodType: 'A',
+  favorite: 'card',
+};
+
+console.log(user.age);
