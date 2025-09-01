@@ -6,6 +6,7 @@ let age = 28
 let me = '私のニックネームは' + nickname + 'です。年齢は'+ age + '歳です。';
 console.log(me); 
 
+
 // Q2 配列
 // 変数 languages に JavaScript, PHP, Ruby, Python, Go の 5 つの値を持つ配列を代入し、
 // その中から JavaScript, Python を取得し、テンプレートリテラルを用いて以下のようにコンソールに出力してください。
@@ -14,6 +15,7 @@ let languages = ['JavaScript', 'PHP', 'Ruby', 'Python','Go'];
 let languagesText = `私の好きな言語は${languages[0]}です。
 次は${languages[3]}を勉強してみたいです。`;
 console.log(languagesText);
+
 
 // Q3 オブジェクト
 // 下記の変数 user を使用し 26 をコンソールに出力してください。
@@ -26,6 +28,7 @@ let user = {
 };
 
 console.log(user.age);
+
 
 // Q4 配列×オブジェクト
 // 下記の変数 playerList を使用し The Legend of Zelda をコンソールに出力してください。
@@ -51,6 +54,7 @@ let playerList = [
 let favoriteGame = playerList[1].favorites[1];
 console.log(favoriteGame);
 
+
 // Q5 四則演算
 // Q4 で定義した変数 playerList を使用し、John, Bob, Michael の年齢の平均値を計算した結果をコンソールに出力してください。
 
@@ -62,6 +66,7 @@ for (let i = 0; i < playerList.length; i++) {
 console.log(totalAge);
 let averageAge = totalAge / playerList.length;
 console.log(averageAge);
+
 
 // Q6 関数
 // Hello とコンソールに出力する関数 sayHello を定義し、実行してください。
@@ -80,3 +85,18 @@ const sayWorld = function() {
 
 sayWorld();
 // console.log(sayWorld());
+
+
+// Q7 メソッド
+// Q3 で定義した変数 user に '2000-09-27'を値とする birthday プロパティを追加してください。
+// Q3 で定義した変数 user に Hello！とコンソールに出力するメソッド sayHello を追加し、実行してください。
+// ※ いずれも Q3 で定義した変数 user を直接書き換えないこと
+
+user.birthday = '2000-09-27';
+// user['birthday'] = '2000-09-27'; この時プロパティを追加する方法は２種類ある
+// console.log(user);
+
+user.sayHello = function() {
+  return `Hello!`;
+};
+console.log(user.sayHello());
