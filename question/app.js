@@ -100,3 +100,34 @@ user.sayHello = function() {
   return `Hello!`;
 };
 console.log(user.sayHello());
+
+// Q8 引数
+// 下記の空のオブジェクト calc を使用し、以下問題を解いてください。
+// let calc = {};
+// ・2つの引数 x, y の和をコンソールに出力する add メソッドを定義し、7 になるように実行して下さい。
+// ・2つの引数 x, y の差をコンソールに出力する subtract メソッドを定義し、10 になるように実行して下さい。
+// ・2つの引数 x, y の積をコンソールに出力する multiply メソッドを定義し、49 になるように実行して下さい。
+// ・2つの引数 x, y の商をコンソールに出力する divide メソッドを定義し、5 になるように実行して下さい。
+
+let calc = {};
+
+add = function(x, y) {
+  return x + y;
+};
+
+subtract = function(x, y) {
+  return x - y;
+};
+
+multiply = function(x, y) {
+  return x * y;
+};
+
+divide = function(x, y) {
+  return x / y;
+};
+
+console.log(add(2, 5));
+console.log(subtract(12, 2));
+console.log(multiply(7, 7));
+console.log(divide(10, 2));
