@@ -62,3 +62,21 @@ for (let i = 0; i < playerList.length; i++) {
 console.log(totalAge);
 let averageAge = totalAge / playerList.length;
 console.log(averageAge);
+
+// Q6 関数
+// Hello とコンソールに出力する関数 sayHello を定義し、実行してください。
+// 変数 sayWorld に World とコンソールに出力する無名関数を代入し、実行してください。
+
+function sayHello() {
+  return 'Hello';
+}
+
+sayHello();
+// console.log(sayHello());
+
+const sayWorld = function() {
+  return 'World';
+}
+
+sayWorld();
+// console.log(sayWorld());
