@@ -50,3 +50,15 @@ let playerList = [
 
 let favoriteGame = playerList[1].favorites[1];
 console.log(favoriteGame);
+
+// Q5 四則演算
+// Q4 で定義した変数 playerList を使用し、John, Bob, Michael の年齢の平均値を計算した結果をコンソールに出力してください。
+
+let totalAge = 0;
+for (let i = 0; i < playerList.length; i++) {
+  totalAge += playerList[i].age;
+}
+
+console.log(totalAge);
+let averageAge = totalAge / playerList.length;
+console.log(averageAge);
