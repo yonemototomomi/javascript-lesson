@@ -169,3 +169,11 @@ console.log(remainder(5, 3));
 
 let num = Math.floor(Math.random() * 10);
 console.log(num);
+
+// Q2 コールバック関数
+// 関数 setTimeout を使用し、3 秒後に以下のようにコンソールに出力してください。
+// 例：Hello World!
+
+setTimeout(function() {
+  console.log('Hello World!');
+}, 3000);
