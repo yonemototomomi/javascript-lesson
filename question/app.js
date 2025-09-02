@@ -167,8 +167,8 @@ console.log(remainder(5, 3));
 // Q1 標準組み込みオブジェクト
 // 標準組み込みオブジェクト Math を使用し、0 ~ 9 のランダムな整数をコンソールに出力してください。
 
-let num = Math.floor(Math.random() * 10);
-console.log(num);
+let number = Math.floor(Math.random() * 10);
+console.log(number);
 
 // Q2 コールバック関数
 // 関数 setTimeout を使用し、3 秒後に以下のようにコンソールに出力してください。
@@ -177,3 +177,19 @@ console.log(num);
 setTimeout(function() {
   console.log('Hello World!');
 }, 3000);
+
+
+// Q3 if
+// 変数 num に 任意の数値を代入し、下記条件のもと文字列をコンソールに出し分ける処理を作成してください。
+// ・num が 0 より大きければnum is greater than 0
+// ・num が 0 より小さければnum is less than 0
+// ・num が 0 であればnum is 0
+
+let num = 16;
+if (num > 0) {
+  console.log('num is greater than 0');
+} else if (num < 0) {
+  console.log('num is less than 0');
+} else if (num === 0) {
+  console.log('num is 0');
+}
