@@ -143,3 +143,20 @@ remainder = function(x, y) {
 };
 
 console.log(remainder(5, 3)); 
+
+
+// Q10　スコープ
+// 下記の console.log(x); においてコンソールに 1 が出力されることはなく、
+// x is not defined（変数 x が定義されていない）というエラーが出力されます。
+// その理由を以下 2 つの単語を使用し app.js にコメントアウトで回答してください。
+// ・スコープ
+// ・参照
+// function foo() {
+//   let x = 1;
+// }
+// console.log(x);
+
+// 回答
+// 上記は、関数fooを定義して、その関数の中で変数xを定義しています。
+// JavaScriptでは、関数内だけスコープが有効であるため、変数xは関数fooの中で定義しているので、
+// 関数fooの外で変数xを使おうとしても参照先がなく、x is not definedというエラーになってしまう。
