@@ -206,3 +206,26 @@ for (let i = 0; i <= 99; i++) {
 }
 
 console.log(numbers);
+
+
+// Q5 for×if
+// 以下の変数 mixed から 要素を一つずつ取り出し、下記条件のもと文字列をコンソールに出し分ける処理を作成してください。
+// let mixed = [4, '2', 5, '8', '9', 0, 1];
+// 条件
+// ・Number であり偶数の時は even
+// ・Number であり奇数の時は odd
+// ・Number 以外の時は not number
+
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+mixed.forEach (x => {
+  if (typeof x === "number") {
+    if (x % 2 === 0) {
+      console.log("even");
+    } else {
+      console.log("odd");
+    }
+  } else {
+    console.log("not number");
+  }
+});
